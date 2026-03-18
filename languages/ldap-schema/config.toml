@@ -4,7 +4,7 @@ name                    = "LDAP Schema"
 grammar                 = "ldap_schema"
 path_suffixes           = ["schema", "ldapschema"]
 code_fence_block_name   = "ldap-schema"
-first_line_pattern      = "^(objectclass|attributetype|objectidentifier)\\s"
+first_line_pattern      = "^(objectclass|attributetype|objectidentifier|matchingrule|matchingruleuse|ldapsyntax|ditcontentrule|ditstructurerule|nameform)\\s"
 line_comments           = ["# ", "// "]
 word_characters         = ["-", "."]
 autoclose_before        = ";:.,=}])> \t\n"
