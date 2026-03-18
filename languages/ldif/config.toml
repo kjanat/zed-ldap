@@ -1,0 +1,4 @@
+name = "LDIF"
+grammar = "ldif"
+path_suffixes = ["ldif"]
+line_comments = ["# "]

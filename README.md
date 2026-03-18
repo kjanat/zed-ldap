@@ -1,11 +1,11 @@
-# LDAP Schema extension for Zed
+# LDAP extension for Zed
 
-Syntax highlighting for LDAP/OpenLDAP schema files (RFC 4512).
+Syntax highlighting for LDAP/OpenLDAP schema files (RFC 4512) and LDIF files (RFC 2849).
 
 ## File associations
 
-- `.schema`
-- `.ldapschema`
+- `.schema`, `.ldapschema` — LDAP Schema
+- `.ldif` — LDIF
 
 ## Install
 
