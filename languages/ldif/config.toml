@@ -1,6 +1,8 @@
 #:schema https://raw.githubusercontent.com/kjanat/zed-editor/refs/heads/feature/extension-toml-schema/crates/extension_api/schemas/language-config.schema.json
 
-name          = "LDIF"
-grammar       = "ldif"
-path_suffixes = ["ldif"]
-line_comments = ["# "]
+name                  = "LDIF"
+grammar               = "ldif"
+path_suffixes         = ["ldif"]
+code_fence_block_name = "ldif"
+line_comments         = ["# "]
+word_characters       = ["-", "."]

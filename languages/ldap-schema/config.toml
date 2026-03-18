@@ -1,11 +1,16 @@
 #:schema https://raw.githubusercontent.com/kjanat/zed-editor/refs/heads/feature/extension-toml-schema/crates/extension_api/schemas/language-config.schema.json
 
-name               = "LDAP Schema"
-grammar            = "ldap_schema"
-path_suffixes      = ["schema", "ldapschema"]
-first_line_pattern = "^(objectclass|attributetype|objectidentifier)\\s"
-line_comments      = ["# ", "// "]
-brackets           = [
+name                    = "LDAP Schema"
+grammar                 = "ldap_schema"
+path_suffixes           = ["schema", "ldapschema"]
+code_fence_block_name   = "ldap-schema"
+first_line_pattern      = "^(objectclass|attributetype|objectidentifier)\\s"
+line_comments           = ["# ", "// "]
+word_characters         = ["-", "."]
+autoclose_before        = ";:.,=}])> \t\n"
+increase_indent_pattern = "^.*(\\(|\\{)\\s*$"
+decrease_indent_pattern = "^\\s*(\\)|\\})"
+brackets                = [
   { start = "(", end = ")", close = true, newline = true },
   { start = "{", end = "}", close = true, newline = false },
   { start = "'", end = "'", close = true, newline = false, not_in = ["string"] },
