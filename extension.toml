@@ -2,19 +2,10 @@ id = "ldap-schema"
 name = "LDAP Schema"
 version = "0.1.0"
 schema_version = 1
-authors = ["OpenAI"]
-description = "Syntax highlighting and language configuration for LDAP/OpenLDAP schema files."
-repository = "https://example.com/replace/me"
+authors = ["kjanat <kjanat@users.noreply.github.com>"]
+description = "Syntax highlighting for LDAP/OpenLDAP schema files (RFC 4512)."
+repository = "https://github.com/kjanat/zed-ldap-schema"
 
 [grammars.ldap_schema]
-repository = "file:///ABSOLUTE/PATH/TO/tree-sitter-ldap-schema"
-rev = "REPLACE_WITH_COMMIT_HASH"
-
-[languages."LDAP Schema"]
-grammar = "ldap_schema"
-path_suffixes = ["schema", "ldapschema"]
-line_comments = ["# "]
-auto_indent_using_last_non_empty_line = false
-brackets = [
-  { start = "(", end = ")", close = true, newline = false },
-]
+repository = "https://github.com/kjanat/tree-sitter-ldap-schema"
+rev = "3fd0be86cf2273a55bb756df592e16890634279a"
