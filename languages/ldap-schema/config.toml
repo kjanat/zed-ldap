@@ -1,0 +1,9 @@
+name = "LDAP Schema"
+grammar = "ldap_schema"
+path_suffixes = ["schema", "ldapschema"]
+first_line_pattern = "^(objectclass|attributetype)\\s*\\("
+line_comments = ["# "]
+auto_indent_using_last_non_empty_line = false
+brackets = [
+  { start = "(", end = ")", close = true, newline = false },
+]

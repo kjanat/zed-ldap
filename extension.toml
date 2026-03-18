@@ -1,0 +1,20 @@
+id = "ldap-schema"
+name = "LDAP Schema"
+version = "0.1.0"
+schema_version = 1
+authors = ["OpenAI"]
+description = "Syntax highlighting and language configuration for LDAP/OpenLDAP schema files."
+repository = "https://example.com/replace/me"
+
+[grammars.ldap_schema]
+repository = "file:///ABSOLUTE/PATH/TO/tree-sitter-ldap-schema"
+rev = "REPLACE_WITH_COMMIT_HASH"
+
+[languages."LDAP Schema"]
+grammar = "ldap_schema"
+path_suffixes = ["schema", "ldapschema"]
+line_comments = ["# "]
+auto_indent_using_last_non_empty_line = false
+brackets = [
+  { start = "(", end = ")", close = true, newline = false },
+]
