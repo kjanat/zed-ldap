@@ -1,3 +1,5 @@
+#:schema https://raw.githubusercontent.com/kjanat/zed-editor/refs/heads/feature/extension-toml-schema/crates/extension_api/schemas/language-config.schema.json
+
 name          = "LDIF"
 grammar       = "ldif"
 path_suffixes = ["ldif"]

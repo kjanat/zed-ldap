@@ -1,3 +1,5 @@
+#:schema https://raw.githubusercontent.com/kjanat/zed-editor/refs/heads/feature/extension-toml-schema/crates/extension_api/schemas/language-config.schema.json
+
 name               = "LDAP Schema"
 grammar            = "ldap_schema"
 path_suffixes      = ["schema", "ldapschema"]
