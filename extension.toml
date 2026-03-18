@@ -8,4 +8,4 @@ repository = "https://github.com/kjanat/zed-ldap-schema"
 
 [grammars.ldap_schema]
 repository = "https://github.com/kjanat/tree-sitter-ldap-schema"
-rev = "c173fd2"
+rev = "c173fd2c26df83b6c3f79879174b963bde24f855"
