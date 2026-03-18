@@ -4,7 +4,7 @@ version = "0.2.0"
 schema_version = 1
 authors = ["Kaj Kowalski <info@kajkowalski.nl>"]
 description = "Syntax highlighting for LDAP/OpenLDAP schema and LDIF files."
-repository = "https://github.com/kjanat/zed-ldap-schema"
+repository = "https://github.com/kjanat/zed-ldap"
 
 [grammars.ldap_schema]
 repository = "https://github.com/kjanat/tree-sitter-ldap-schema"
