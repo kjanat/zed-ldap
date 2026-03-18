@@ -1,9 +1,9 @@
-name = "LDAP Schema"
-grammar = "ldap_schema"
-path_suffixes = ["schema", "ldapschema"]
+name               = "LDAP Schema"
+grammar            = "ldap_schema"
+path_suffixes      = ["schema", "ldapschema"]
 first_line_pattern = "^(objectclass|attributetype|objectidentifier)\\s"
-line_comments = ["# ", "// "]
-brackets = [
+line_comments      = ["# ", "// "]
+brackets           = [
   { start = "(", end = ")", close = true, newline = true },
   { start = "{", end = "}", close = true, newline = false },
   { start = "'", end = "'", close = true, newline = false, not_in = ["string"] },
