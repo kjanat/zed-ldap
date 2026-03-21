@@ -2,16 +2,18 @@
 
 id             = "ldap"
 name           = "LDAP"
-version        = "0.2.2"
+version        = "1.0.0"
 schema_version = 1
 authors        = ["Kaj Kowalski <info@kajkowalski.nl>"]
 description    = "Syntax highlighting for LDAP/OpenLDAP schema and LDIF files."
 repository     = "https://github.com/kjanat/zed-ldap"
+languages      = ["LDIF", "LDAP Schema"]
 
+[grammars]
 [grammars.ldap_schema]
 repository = "https://github.com/kjanat/tree-sitter-ldap-schema"
-rev        = "766f35786b432efd567580c2cb402cc6e9751827"
+rev        = "e5b88b33fc74fa20f71d72d99f97dd6aa62bba70"
 
 [grammars.ldif]
 repository = "https://github.com/kjanat/tree-sitter-ldif"
-rev        = "f6d1c3a755a89251f5b5f8abdcae3f3093243cfb"
+rev        = "65e38afd810b19167cf9375d3b9bdb94a1531a7f"
