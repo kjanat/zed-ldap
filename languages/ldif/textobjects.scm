@@ -1,15 +1,10 @@
-; Textobjects for LDIF files
+; Textobjects for Zed. Zed only recognizes function/class/comment
+; captures (each with .inside/.around); finer-grained captures like
+; @parameter.* are ignored.
 
 ; class = entries/records
 (entry) @class.around
 (change_record) @class.around
 
-; function = dn spec
-(dn_spec) @function.around
-
-; parameter = attribute lines
-(attrval_spec) @parameter.around
-(modify_spec) @parameter.around
-
-; comment
 (comment) @comment.around
+(comment) @comment.inside

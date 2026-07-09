@@ -33,7 +33,7 @@
 ; Regular values
 (value) @string
 (base64_value) @string.special
-(url_value) @markup.link.url
+(url_value) @link_uri
 
 ; DN values override generic @string — must come AFTER (value) @string
 ; Captures inner (value) node so it takes priority over the generic capture
